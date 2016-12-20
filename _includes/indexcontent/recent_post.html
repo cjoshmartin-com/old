@@ -1,0 +1,10 @@
+<div id="menu3" class="tab-pane fade">
+  <h3>recent posts</h3>
+    {% for post in site.posts limit:3 %}
+    <span align="center">
+    <h4><a href="{{post.url}}">{{post.title}}</h4>
+      <p>{{post.meta}}</p></a>
+    </span>
+    {% endfor %}
+  </ul>
+</div>
